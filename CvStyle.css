@@ -1,0 +1,42 @@
+*{
+    margin: 10pt;
+    box-sizing: border-box;
+}
+
+.card{
+    position: relative;
+    width:80%;
+    height: 80%;
+    border: 5px solid #22181C;
+}
+
+.undeline{
+    width: 30%;
+    height:5%;
+    border: black 5px;
+    background-color: #22181c;
+}
+
+.imageContainer{
+    border: 5px solid #7A7978;
+    border-radius: 3%;
+    width:80%;
+    height:60%; 
+
+}
+.imageContainer>img{
+    border-radius: 3%;
+
+}
+
+img{
+    margin:0px;
+    height: 100%;
+    width: 100%;
+}
+
+/* 
+.projectImage{
+    clip-path: rect(0px,50px,100px,0px);
+
+} */

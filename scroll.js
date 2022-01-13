@@ -4,7 +4,7 @@ const projects = [
         id:0,
         title: "CV Site",
         img:"./images/lonePine.png",
-        projectDesc: "This site which I created and hosted to show off some of the things that I have made.",
+        projectDesc: "This site which I created and hosted to show off some of the things that I have made. Two buttons below to see other Projects, and links to try them (not all avalible).",
         link:""
     },
     {

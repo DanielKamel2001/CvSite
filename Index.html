@@ -9,33 +9,68 @@
     </Head>
     <body>
         <main>
-            <div class="title">
-                <h2>My Projects</h2>
-                <div class="underline"></div>
+            <div class="header">
+                <h1 class="title">Daniel Gohara Kamel</h1>
             </div>
-            
-            <section class = "card">
-                <article class="project">
-                    <div class="title">
-                        <h3 id="projectTitle">CV Site</h3>
+
+            <div id="aboutMe" class="">
+                <div class="title">
+                    <h2>About Me</h2>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="imageContainer  container column one-half" id="meImageContainer">
+                        <img src="./images/me.jpg" alt="it's me">
                     </div>
-                    
-                    <div class="imageContainer">
-                        <img class="" src="./images/lonePine.png" id = "sample-img" alt="Image of the project">
+                    <div class="column one-half" id="aboutMeDesc">
+                        <h3>Education</h3>
+                        <h4>Ontario Tech University (Expected Graduation 2023)</h4>
+                        <h5>B.Eng. (Hons), Software Engineering</h5>
+                        <h5>Oshawa, Ontario</h5>
+                        <h5>Software Engineering, Third year</h5>
+                        <h5>Cumulative Grade Point average: 3.70 of 4.3 (Presidents Honors Scale)</h5>
+                            <br>
+                        <h4>Meadowvale Secondary School (Graduated 2019)</h4>
+                        <h5>Ontario High School Diploma</h5>
+                        <h5>Mississauga, Ontario </h5>
+                        
+                        <h3>Personal</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus maiores, voluptatibus, quos, est expedita odit sequi eveniet totam delectus sit modi quia aliquam veritatis sunt illo itaque ducimus quibusdam nesciunt?</p>
                     </div>
 
-                    <div class="projectDetails">
-                        <p id="projectDesc">This site which I created and hosted to show off some of the things that I have made.</p>
-                        <a href="http://www.danielgohara.com" id="projectLink">Project Link</a>
-                    </div>
+                </div>
+            </div>
+
+            <div id="myProjects">
+                <div class="title">
+                    <h2>My Projects</h2>
+                </div>
+                <br>
+                <section class = "card container">
+                    <article class="project">
+                        <div class="title">
+                            <h3 id="projectTitle">CV Site</h3>
+                        </div>
+                        
+                        <div class="imageContainer container">
+                            <img class="" src="./images/lonePine.png" id = "sample-img" alt="Image of the project">
+                            
+                        </div>
+
+                        <div class="projectDetails">
+                            <p id="projectDesc">This site which I created and hosted to show off some of the things that I have made. Two buttons below to see other Projects, and links to try them (not all avalible).</p>
+                            <a shref="http://www.danielgohara.com" id="projectLink">Project Link</a>
+                        </div>
+                        
+                        <div class="button-container container">
+                            
+                            <button id="prevButton" class="prev">Prev</button>
+                            <button id="nextButton"class="next">Next</button>
+                        </div>
+                    </article>
                     
-                    <div class="button-container">
-                        <button id="prevButton" class="prev">Prev</button>
-                        <button id="nextButton"class="next">Next</button>
-                    </div>
-                </article>
-                
-            </section>
+                </section>
+            </div>
         </main>
         
         <script src="./scroll.js"></script>        

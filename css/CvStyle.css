@@ -8,6 +8,8 @@
     width:80%;
     height: 80%;
     border: 5px solid #22181C;
+    box-shadow: 2 #28112B;
+    /* overflow: scroll; */
 }
 
 .undeline{
@@ -26,7 +28,7 @@
 }
 .imageContainer>img{
     border-radius: 3%;
-
+    object-fit: cover;
 }
 
 img{

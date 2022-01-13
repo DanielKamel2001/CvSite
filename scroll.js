@@ -4,7 +4,7 @@ const projects = [
         title: "CV Site",
         img:"./images/lonePine.png",
         projectDesc: "This site which I created and hosted to show off some of the things that I have made.",
-        link:"no😎"
+        link:"_self"
     },
     {
         id:1,
@@ -17,15 +17,25 @@ const projects = [
 ]
 
 
-const projectTitle = document.getElementById("projectTitle")
-const projectDesc = document.getElementById("projectDesc")
-const image = document.getElementById("sample-img")
-const link = document.getElementById("projectLink")
+const projectTitle = document.getElementById("projectTitle");
+const projectDesc = document.getElementById("projectDesc");
+const image = document.getElementById("sample-img");
+const link = document.getElementById("projectLink");
 
-const buttonPrev = document.querySelector("prev")
-const buttonNext = document.querySelector("next")
+const buttonPrev = document.querySelector("prev");
+const buttonNext = document.querySelector("next");
 
+console.log(projectTitle); 
+console.log(projectDesc);  
+let currentProject = 0;
 
+window.addEventListener("DOMContentLoaded",function () {
+    const item = projects[currentProject];
+    projectTitle.textContent = item.title;
+    projectDesc.textContent = item.projectDesc;
+    image.src = item.img;
+    link.href = item.link;
+});
 function swap(){
 
 }

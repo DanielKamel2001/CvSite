@@ -1,44 +1,82 @@
+<!-- A Website Created By Daniel Kamel to Show Off Daniel Kamel 💜 -->
 <Doctype HTML>
 <html lang="en">
+
     <Head>
         <meta charset="utf-8">
+        <!-- so that the view port matches the device screen -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <title>Daniel's JS Projects</title>
-        <link rel="stylesheet" href="./css/normalize.css">
-        <link rel="stylesheet" href="./css/skeleton.css">     
-        <link rel="stylesheet" href="./css/CvStyle.css">
-    </Head>
-    <body>
-        <main>
-            <div class="header">
-                <h1 class="title">Daniel Gohara Kamel</h1>
-            </div>
 
-            <div id="aboutMe" class="">
-                <div class="title">
+        <!-- Skelton CSS  premade css files -->
+        <!-- not in use anymore -->
+        <!-- <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/skeleton.css">      -->
+
+        <!-- Pure CSS (an online premade style sheet) -->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css">
+        
+        <!-- Google icon css -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+        <!-- Custom project css -->
+        <link rel="stylesheet" href="./css/CvStyle.css">
+        
+    </Head>
+
+    <body>
+        <div class="header pure-g">
+            <div class="navbar pure-u-1">          
+                <a class="title" href="#home"> Daniel Gohara Kamel</a>
+                <a class="" href="#aboutMe">About Me</a>
+                <a class="" href="#myProjects">My Projects</a>
+            </div>
+            
+            <p class="pure-u-1"> Meet Daniel Gohara</p>
+            
+
+        </div>
+    <main>
+            
+            <div id="aboutMe" class="pure-g">
+                <div class="title pure-u-1">
                     <h2>About Me</h2>
                 </div>
-                <br>
-                <div class="row">
-                    <div class="imageContainer  container column one-half" id="meImageContainer">
-                        <img src="./images/me.jpg" alt="it's me">
-                    </div>
-                    <div class="column one-half" id="aboutMeDesc">
-                        <h3>Education</h3>
-                        <h4>Ontario Tech University (Expected Graduation 2023)</h4>
-                        <h5>B.Eng. (Hons), Software Engineering</h5>
-                        <h5>Oshawa, Ontario</h5>
-                        <h5>Software Engineering, Third year</h5>
-                        <h5>Cumulative Grade Point average: 3.70 of 4.3 (Presidents Honors Scale)</h5>
-                            <br>
-                        <h4>Meadowvale Secondary School (Graduated 2019)</h4>
-                        <h5>Ontario High School Diploma</h5>
-                        <h5>Mississauga, Ontario </h5>
-                        
-                        <h3>Personal</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus maiores, voluptatibus, quos, est expedita odit sequi eveniet totam delectus sit modi quia aliquam veritatis sunt illo itaque ducimus quibusdam nesciunt?</p>
-                    </div>
-
+                
+                <div class="imageContainer pure-u-1 pure-u-md-1-2" id="meImageContainer">
+                    <img class="pure-img"src="./images/me.jpg" alt="it's me">
+                    <!-- <p>It's me</p> -->
                 </div>
+
+                <div class="pure-u-1 pure-u-md-1-2" id="aboutMeDesc">
+                    
+                    <div class="Education">
+                        <h3 class="title">Education</h3>
+                        <article class="pure-u-lg-1-2 pure-u-1 Education">
+                            <h4>Ontario Tech University (Expected Graduation 2023)</h4>
+                            <p>B.Eng. (Hons), Software Engineering <br>
+                            Oshawa, Ontario <br>
+                            Software Engineering, Third year <br>
+                            Cumulative Grade Point average: 3.70 of 4.3 (Presidents Honors Scale)</p> 
+                        </article>
+                        <article class="pure-u-lg-1-2 pure-u-1 Education">
+                            <h4>Meadowvale Secondary School (Graduated 2019)</h4>
+                            <p>Ontario High School Diploma <br>
+                            Mississauga, Ontario </p>
+                        </article>
+                    </div>
+                    
+                    <div class="Personal">
+                        <h3>Personal</h3>
+                        <p>I'm Daniel Kamel, I am a third year student at Ontario tech University</p>
+                
+                    </div>
+                </div>
+
+             
             </div>
 
             <div id="myProjects">
@@ -46,14 +84,14 @@
                     <h2>My Projects</h2>
                 </div>
                 <br>
-                <section class = "card container">
+                <div class = "">
                     <article class="project">
                         <div class="title">
                             <h3 id="projectTitle">CV Site</h3>
                         </div>
                         
                         <div class="imageContainer container">
-                            <img class="" src="./images/lonePine.png" id = "sample-img" alt="Image of the project">
+                            <img class="pure-img" src="./images/lonePine.png" id = "sample-img" alt="Image of the project">
                             
                         </div>
 
@@ -64,12 +102,12 @@
                         
                         <div class="button-container container">
                             
-                            <button id="prevButton" class="prev">Prev</button>
-                            <button id="nextButton"class="next">Next</button>
+                            <button id="prevProjectButton" class="pure-button"><span class="material-icons">chevron_left</span> Prev</button>
+                            <button id="nextProjectButton"class="pure-button">Next <span class="material-icons">chevron_right</span></button>
                         </div>
                     </article>
                     
-                </section>
+                </div>
             </div>
         </main>
         

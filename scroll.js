@@ -23,8 +23,8 @@ const projectDesc = document.getElementById("projectDesc");
 const image = document.getElementById("sample-img");
 const link = document.getElementById("projectLink");
 
-const buttonPrev = document.getElementById("prevButton");
-const buttonNext = document.getElementById("nextButton");
+const buttonPrev = document.getElementById("prevProjectButton");
+const buttonNext = document.getElementById("nextProjectButton");
 
 // tracks the current displayed project
 let currentProject = 0;

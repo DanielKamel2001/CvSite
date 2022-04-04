@@ -12,7 +12,7 @@ const projects = [
         title: "Reflex Game",
         img:"./images/reflexSite.png",
         projectDesc: "A Simple Reflex Game where the player presses a keyboard button witin a certain amount of time to gain points;If the player takes to long or presses the wrong key they lose points. ",
-        link:"http://www.danielgohara.com",
+        link:"./projectFiles/reflexGame/reflex.html",
     },
 
 ]

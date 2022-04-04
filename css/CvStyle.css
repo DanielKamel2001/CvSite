@@ -24,7 +24,7 @@ body{
 .imageContainer{
     /* border: 5px solid #7A7978;*/
     border-radius: 2%; 
-    width:80%;
+    /* width:80%; */
     height:auto; 
     
     /* background-color: white; */
@@ -39,41 +39,59 @@ body{
     height: auto;
     object-fit: cover;
 }
-.header{
+
+.buttonContainer{
+
+}
+
+.intro{
     background-color: bisque; /*if image not found */
-    background-image: linear-gradient(to bottom, rgba(32, 32, 48,0.9), rgba(128,128,128, 0)),url("../images/me_background.jpg");
-    
-    background-size: cover;
-    background-position: middle;
+    background-image: url("../images/chris-ried-ieic5Tq8YMk-unsplash.jpg");
+    /* background:  linear-gradient(to bottom, rgba(32, 32, 48,0.9), rgba(128,128,128, 0)); */
+    padding-top:0;  
     height:40%;
 }
 
-.header > p{
-    
+.intro > h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 10% 20%;
+    margin: 0;
+    color: #fff;
 }
+
 .navbar{
     border: 5px solid #000 ;
     background-color: #333333;
-    overflow:hidden;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height:fit-content;
 
+    /* Fixed Headers */
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    /* overflow:hidden; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
 
-.navbar> a{
-    color: goldenrod;
-    background-color: #333333;
-    float:left;    
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+.sectionWrapper{
+    padding:5%;
+    /* margin: 5%; */
+}
+.section{
+    padding: 5% 5%;
+    margin: 0 auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 80%;
+    border: 5px solid goldenrod;
+    background: white;
 }
 
 #aboutMe{
-    /* background-color: #B7D5D4; */
-    padding: 5%;
-    margin: 5%;
-    border: 5px solid goldenrod;
+    background:  linear-gradient(to bottom, rgba(57, 61, 63,1 ), rgba(193, 189, 219, 1));
+
+    
 }
 
 #meImageContainer{
@@ -91,21 +109,10 @@ body{
 
 }
 
-/* #aboutMeDesc>h4{
-    padding: 0px;
-    margin: 0%;
-    font-size: 100%;
-}
-#aboutMeDesc>h5{
-    text-indent: 1em;
-    font-size: 80%;
-    padding: 0px;
-    margin: 0%;
-} */
 
 #myProjects{
-    /* background-color:#B8860B ; */
-    padding: 5%;
+    background:  linear-gradient(to bottom, rgba(193, 189, 219,1), rgba(162, 199, 229,1));
+
 }
 
 .card{
@@ -121,9 +128,10 @@ body{
 
     /* overflow: scroll; */
 }
+
 .projectDetails{
     text-align: center;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
 }
 
 #prevButton
